@@ -21,6 +21,7 @@ import Tailwind.Utilities as Tw
 -- VIEW
 
 -- main : Html.Html msg
+main : Html.Html msg
 main =
     Html.button
         [ Attr.type_ "button"
