@@ -1,64 +1,44 @@
 module Main exposing (..)
 
--- Press buttons to increment and decrement a counter.
---
--- Read how it works:
---   https://guide.elm-lang.org/architecture/buttons.html
---
-
-
 import Browser
-import Html exposing (Html, button, div, text)
-import Html.Events exposing (onClick)
+-- import Css.Global
+-- import Html.Styled as HtmlStyle exposing (..)
+import Html as Html exposing (Html, div)
+import Html.Attributes exposing (class)
+-- import Tailwind.Utilities as Tw
 
+import Tailwind.Buttons.PrimaryButton as PrimaryButton
+import VirtualDom
 
+type alias Model = String
 
--- MAIN
-
-
+main : Program () Model msg
 main =
-  Browser.sandbox { init = init, update = update, view = view }
+    Browser.element
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
 
+init: () -> (Model, Cmd msg)
+init _ =
+    ("", Cmd.none)
 
+view: Model -> VirtualDom.Node msg
+view _ =
+    Html.div [class "buttons"]
+        [ PrimaryButton.view ( { size = PrimaryButton.ExtraSmall, text = "Extra small" } )
+        , PrimaryButton.view ( { size = PrimaryButton.Small, text = "Small button" } )
+        , PrimaryButton.view ( { size = PrimaryButton.Normal, text = "I'm NORMAL" } )
+        , PrimaryButton.view ( { size = PrimaryButton.Large, text = "Large button" } )
+        , PrimaryButton.view ( { size = PrimaryButton.ExtraLarge, text = "Extra Large" } )
+      ]
 
--- MODEL
+update: msg -> Model -> (Model, Cmd msg)
+update _ model =
+    (model, Cmd.none)
 
-
-type alias Model = Int
-
-
-init : Model
-init =
-  0
-
-
-
--- UPDATE
-
-
-type Msg
-  = Increment
-  | Decrement
-
-
-update : Msg -> Model -> Model
-update msg model =
-  case msg of
-    Increment ->
-      model + 1
-
-    Decrement ->
-      model - 1
-
-
-
--- VIEW
-
-
-view : Model -> Html Msg
-view model =
-  div []
-    [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (String.fromInt model) ]
-    , button [ onClick Increment ] [ text "+" ]
-    ]
+subscriptions : Model -> Sub msg
+subscriptions _ =
+    Sub.none

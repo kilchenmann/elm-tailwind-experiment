@@ -12,6 +12,7 @@ import Tailwind.Utilities as Tw
 
 -- import Tailwind.Breakpoints as Bp
 
+
 -- MAIN
 
 
@@ -25,7 +26,7 @@ main =
     div []
     [ h3 []
         [ text "Button with leading icon" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -48,11 +49,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_700
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -76,11 +78,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_700
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -103,11 +106,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_700
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -130,11 +134,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_700
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -157,13 +162,14 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_700
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     h3 []
+        , h3 []
         [ text "Secondary buttons" ]
-    ,     {- This example requires Tailwind CSS v2.0+ -}
+        , {- This example requires Tailwind CSS v2.0+ -}
         button
         [ Attr.type_ "button"
         , Attr.css
@@ -186,11 +192,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_200
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -213,11 +220,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_200
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -239,11 +247,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_200
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -265,11 +274,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_200
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -291,13 +301,14 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_indigo_200
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     h3 []
+        , h3 []
         [ text "White buttons" ]
-    ,     {- This example requires Tailwind CSS v2.0+ -}
+        , {- This example requires Tailwind CSS v2.0+ -}
         button
         [ Attr.type_ "button"
         , Attr.css
@@ -321,11 +332,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_gray_50
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -349,11 +361,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_gray_50
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -376,11 +389,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_gray_50
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -403,11 +417,12 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_gray_50
+                , Tw.cursor_pointer
                 ]
             ]
         ]
         [ text "Button text" ]
-    ,     button
+        , button
         [ Attr.type_ "button"
         , Attr.css
             [ Tw.inline_flex
@@ -430,6 +445,7 @@ main =
                 ]
             , Css.hover
                 [ Tw.bg_gray_50
+                , Tw.cursor_pointer
                 ]
             ]
         ]

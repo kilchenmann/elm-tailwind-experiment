@@ -14,6 +14,7 @@ Only the following tailwind modules are working:
 
 * [Badges](http://localhost:8000/src/Tailwind/Badges.elm)
 * [Buttons](http://localhost:8000/src/Tailwind/Buttons.elm)
+* [Buttons](http://localhost:8000/src/Tailwind/Button.elm)
 * [Icon](http://localhost:8000/src/Tailwind/Badges.elm)
 
 And the DaSCH Logo as SVG
